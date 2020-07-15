@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>body {  background: #159957; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #dcf1f9;
+}
+
+#space, .stars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stars {
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 5s infinite;
+  opacity: 0;
+}
+
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+
+.button {
+  background-color: #3498DB ; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Calvin;
+}
+.button:hover, .button:focus {
+	color: #fff;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.section {
+  padding: 1rem 0 1rem;
+  text-align: center;
+}
+
+.hero {
+	padding: 10rem 0px
+}
+ img {
+ 	width: 20%;
+  padding-top: 0px;
+   margin-top:-5%;
+ }
+ footer {
+ 	bottom: 6px;
+
+ }
+h1{
+  text-align: center;
+  font-size: 70px;
+  font-family: Calvin;
+
+  }
+
+  .floor {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+  }
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 470px;
+
+    perspective: 1000px;
+    position: relative;
+    left:470px/* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #2C3E50;
+    color: black;
+
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#2C3E50;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .lick
+  {
+    top: 30px
+  }
+  #console {
+	font-family: courier, monospace;
+	color: #fff;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	font-size:14px;
+}
+
+a {
+	color: #0bc;
+	text-decoration: none;
+}
+
+#a {
+	color: #0f0;
+}
+
+#c {
+	color: #0bc;
+}
+
+#b {
+	color: #ff0096;
+}
+
+#k {
+    	animation: change 1s;
+}
+
+#op{
+    	color: #888888
+}
+
+@keyframes change {
+    	0%  { color:  #0f0; }
+    	50% { color:  #0f0; }
+    	99% { color: black; }
+}
+
+</style>
+</head>
+
+  <body>
+       <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <div class="foot"><h1>ANGAPOTRAM<hr width=56%></h1><h1>Rick</h1>
+
+      <div><div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="rick.jpg" alt="Avatar" style="width:300px;height:470px;" class="lick">
+    </div>
+    <div class="flip-card-back">
+      <h1>RICK</h1>
+      <p>Sanchez is a misanthropic alcoholic scientist inspired by Emmett "Doc" Brown from Back to the Future. Known for his reckless, nihilistic behavior and pessimistic personality, the character has been well received. He is a sociopathic mad scientist who seems to know everything in the universe and thus finds life a traumatizing and pointless experience. However, despite assuming himself to be the smartest person in the universe, there have been times where he has been wrong.</p>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<hr width=50%>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'><div id="space">
+      <div class="stars"></div>
+      <div class="stars"></div>
+      <div class="stars"></div>
+      <div class="stars"></div>
+      <div class="stars"></div>
+    </div>
+
+
+      <div class="section hero">
+        <div class="container">
+          <div class="row">
+
+            <h1></h1>
+
+                <div id="quote">
+
+                </div>
+
+
+              <button class="button button-primary" type="button" onclick="getNewQuote()">
+              Generate New Quote! </button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div style="background-color:#212F3C;height:270px;  overflow-y: hidden;overflow-x: hidden;" ><img src="dab.gif" style="position:relative;top:60px;height:270px;width:500px:"> <h2 style="color:#D0D3D4;position:relative;left:430px;bottom: 200px;font-size:40px;font-family:Calvin">OUR RELIGONS NAME (BURP) IS.....
+  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cannabis...... ism?</h2></div>
+
+
+
+
+    <script>var getNewQuote = function() {
+var quotes =[
+  {
+    text: "You're like Hitler, except...Hitler cared about Germany, or something.",
+    source: "Rick",
+    img: "https://img00.deviantart.net/1f9e/i/2017/115/d/7/png_rick_and_morty_ohne_schatierung_by_lalingla-db72d6x.png"
+  },
+   {
+    text: "I know that new situations can be intimidating. You lookin' around and it's all scary and different, but y'know... meeting them head-on, charging into 'em like a bull—that's how we grow as people.",
+    source: "Rick",
+    img: "http://orig13.deviantart.net/3812/f/2015/336/e/7/rick_and_morty_vector_by_clam5hell-d9ireod.png"
+  },
+
+   {
+    text: "Get your shit together, get it all together and put it in a backpack. All your shit, so it's together.",
+    source: "Morty",
+    img: "https://pixel.nymag.com/imgs/custom/tvrecaps/recaps-rick-and-morty-160x160.png"
+  },
+  {
+    text: "They're robots Morty! It's okay to shoot them! They're just robots!..It's a figure of speech, Morty! They're bureaucrats! I don't respect them. Just keep shooting, Morty! You have no idea what prison is like here!",
+    source: "Rick",
+    img: "http://orig13.deviantart.net/3812/f/2015/336/e/7/rick_and_morty_vector_by_clam5hell-d9ireod.png"
+  },
+  {
+    text: "Have you ever tried to relax? It's a paradox…",
+    source: "Jerry Smith",
+    img: "https://68.media.tumblr.com/871682ca7c79a1c01ff0e438359584e5/tumblr_olf6jjToqx1w3z1eko2_r1_500.png"
+  },
+  {
+    text: "Sometimes science is a lot more art, than science. A lot of people don't get that.",
+    source: "Rick",
+    img: "http://orig13.deviantart.net/3812/f/2015/336/e/7/rick_and_morty_vector_by_clam5hell-d9ireod.png"
+  },
+  {
+    text: "What, So Everyone’s Supposed To Sleep Every Single Night Now?",
+    source: "Rick",
+    img: "https://img00.deviantart.net/1f9e/i/2017/115/d/7/png_rick_and_morty_ohne_schatierung_by_lalingla-db72d6x.png"
+  },
+  {
+    text: "What People Call ' Love ' Is Just A Chemical Reaction...",
+    source: "Rick",
+    img: "https://img00.deviantart.net/1f9e/i/2017/115/d/7/png_rick_and_morty_ohne_schatierung_by_lalingla-db72d6x.png"
+  },
+  {
+    text: "Weddings Are Basically Funerals With A Cake",
+    source: "Rick",
+    img: "https://img00.deviantart.net/1f9e/i/2017/115/d/7/png_rick_and_morty_ohne_schatierung_by_lalingla-db72d6x.png"
+  },
+  {
+    text: "Wubba Lubba Dub Dub!",
+    source: "Rick",
+    img: "https://img00.deviantart.net/1f9e/i/2017/115/d/7/png_rick_and_morty_ohne_schatierung_by_lalingla-db72d6x.png"
+  },
+];
+
+      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote").innerHTML =
+        '<img src="' + quote.img + '">' +
+        '<h5>' + quote.text + '</h5>' + '-' + quote.source + '</em>' + '</p>';
+
+    truncateQuote = quote.text;
+    tweet = truncateQuote.substr(0,120)
+};
+
+
+function tweetQuote(){
+  window.open('https://twitter.com/intent/tweet?text=' + '"' + encodeURIComponent(tweet) + '" - Rick and Morty',"_blank");
+};
+
+
+window.onload=getNewQuote;
+
+</script>
+  </body>
+</html>

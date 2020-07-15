@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+
+
+
+  *
+{
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+}
+.top
+{
+  background-color: #2D5988;
+  height: 130px;
+  text-align: center;
+  font-size: 100px;
+  position: relative;
+  right: 0px;
+  overflow-y: hidden;
+}
+img
+{
+  height: 130px;
+  float: left;
+  width: 127px
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #ffffff
+;
+  overflow: hidden;
+ padding-bottom: 10px;
+ margin-bottom: px;
+ margin-top: px;
+  border-top: 5px solid black
+  ;bottom: 100px;
+    border-bottom:  5px solid black
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #ffffff;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #000000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+    margin-right: 40px
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+  color:#000000;
+  width:
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ffffff;
+  color: black;
+  width: 100px
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+a
+{
+  margin-right: 40px
+}
+.dropbtn
+{
+  margin-right: 40px;
+
+
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("bill.jpg");
+  height: 500px;
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foot
+{
+  padding: 35px;
+  height: 270px;
+  width: 320px
+}
+.foot1
+{
+  transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
+ grid-area: text;
+ font-family: 'Sarpanch', sans-serif;
+ font-size: 70px;
+ margin: 0;
+ padding: 30px;
+ color: #1d9099;
+ text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #D53A33;
+ position: relative;
+ left: 340px;
+ top: 60px;
+}
+.foot3
+{
+  border-bottom: 4px solid black;
+  height: 400px
+}
+.foot4
+{
+  width: 140px;
+  height: 45px;
+  background: black;
+  color: white;
+  border: 2px solid #F1C40F ;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition:  all 0.4s;
+  position: relative;
+  left: 560px;
+  top:110px
+}
+.foot4:hover
+{
+  background-color: #F1C40F
+}
+.foot4::before
+{
+  content: "";
+  position:  absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%
+  background-color:#F1C40F ;
+  z-index:-1;
+  filter: blur(0);
+  transition: all 0.4s;
+}
+.foot4:hover::before{
+  filter: blur(20px);
+}
+
+.text
+{
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin:100px auto;
+  text-align:center;
+  font-size:70px;
+  color:white;
+
+
+  text-shadow:
+    1px 1px 0px
+#4169E1,
+    2px 2px 0px
+#4169E1,
+    3px 3px 0px
+#4169E1,
+    4px 4px 0px
+#4169E1,
+    5px 5px 0px
+#4169E1,
+    6px 6px 0px
+#4169E1,
+    7px 7px 0px
+#4169E1,
+    8px 8px 0px
+#4169E1,
+    9px 9px 0px
+#4169E1,
+    10px 10px 0px
+#4169E1,
+    15px 15px 25px rgba(0,0,0,.9);
+    transition: .5s ease-in-out;
+}
+.floor
+{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.text:hover {
+
+  text-shadow:w
+    -1px 1px 0px
+#4169E1,
+    -2px 2px 0px
+#4169E1,
+    -3px 3px 0px
+#4169E1,
+    -4px 4px 0px
+#4169E1,
+    -5px 5px 0px
+#4169E1,
+    -6px 6px 0px
+#4169E1,
+    -7px 7px 0px
+#4169E1,
+    -8px 8px 0px
+#4169E1,
+    -9px 9px 0px
+#4169E1,
+    -10px 10px 0px
+#4169E1,
+    -15px 15px 25px rgba(0,0,0,.9);
+}
+
+.dab {
+  position: relative;
+  bottom: 200px;
+  padding: 10px 30px;
+  margin: 0 15px;
+  color:
+#4682B4;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+.dab:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21ebff;
+  border-left: 2px solid #21ebff;
+  transition: 0.5s;
+}
+
+.dab:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #21ebff;
+  border-right: 2px solid #21ebff;
+  transition: 0.1s;
+}
+
+.dab:hover:before {
+  width: 100%;
+  height: 100%;
+  transition: 0.1s;
+}
+
+.dab:hover:after {
+  width: 100%;
+  height: 100%;
+  transition: 0.1s;
+}
+
+.dab:hover {
+  background:
+#4682B4;
+  color: #111;
+  box-shadow: 0 0 50px #21ebff;
+  transition-delay: 0.1s;
+}
+
+
+
+.container {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+
+  left:630px;
+  bottom: 30px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #000000 ;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #7B241C;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+.css {
+    width: 1300px;
+    height: 530px;
+
+    background: #000;
+    bottom: 1050px;
+    display: block;
+}
+
+
+
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+background-image: linear-gradient(to top, #7B241C 20%, #212F3C 80%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+    overflow-y: hidden;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    overflow-y: hidden;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+  overflow-y: hidden;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+    overflow-y: hidden;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    overflow-y: hidden;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+    overflow-y: hidden;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+    overflow-y: hidden;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+     overflow-y: hidden;
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+      overflow-y: hidden;
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+      overflow-y: hidden;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.kill{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid  #2C3E50 ;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.kill span{
+  position: relative;
+  z-index: 2;
+}
+
+.kill:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:#A93226;
+  transition: all .35s;
+}
+
+.kill:hover{
+  color: #fff;
+}
+
+.kill:hover:after{
+  width: 100%;
+}
+canvas {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.IDK
+{
+    font-family: Monaco, Andale Mono, Monospace, Courier;
+    padding: 3px;
+ width: 100%;
+ height: 100%;
+ display: block;
+ overflow-x: hidden;
+ overflow-y: auto;
+ color: #0f0;
+ font-weight: bold;
+ letter-spacing: 0.15em;
+ white-space: pre-wrap;
+ text-shadow: 0 0 2px rgba($green, 0.75);
+ line-height: 1;
+ position: relative;
+ bottom: 30px
+}
+
+.idk
+{
+  width: 280px;
+  height: 270px;
+  position: relative;
+}

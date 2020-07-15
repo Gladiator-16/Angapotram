@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+
+  }
+}
+
+body {
+  background: #222222;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #FFF;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 60em;
+  min-width: 45em;
+  margin: 0 auto;
+  padding: 0 2em;
+
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  z-index: 3;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: right;
+  }
+  li {
+    display: inline-block;
+    padding: 2em;
+    text-align: center;
+    transition: all .2s;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .3s;
+    &:hover {
+      color: #FFA4A4;
+    }
+  }
+}
+
+#icon {
+  display: inline-block;
+  padding-top: .7em;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#nav-bg {
+  background: #222;
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  background-color: #D63C3C;
+  padding: 8em 0 6em;
+  z-index: 2;
+  h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+#about {
+  background: #DDDDDD;
+  height: 70em;
+  padding: 2em 0;
+
+  p {
+    line-height: 1.5em;
+    font-size: 1em;
+    margin: 0;
+    color: #000000;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: justify;
+  }
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 1em;
+    margin: 0;
+    color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-align: justify;
+  }
+
+#emblem {
+  height: 2em;
+  width: auto;
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.memberbox {
+  display: inline-block;
+  overflow: hidden;
+  height: 20em;
+  width: 33%;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.avatar {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+.quotation {
+  font-style: italic;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1em;
+}
+h1{
+  text-align: center;
+  font-size: 130px;
+  position: relative;
+  bottom: 70px
+  }
+  @import 'https://fonts.googleapis.com/css?family=Inconsolata';
+
+
+  .noise {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .02;
+  }
+
+  .overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:
+        repeating-linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0) 100%);
+    background-size: auto 4px;
+    z-index: 1;
+  }
+
+  .overlay::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        0deg,
+        transparent 0%,
+        rgba(32, 128, 32, 0.2) 2%,
+        rgba(32, 128, 32, 0.8) 3%,
+        rgba(32, 128, 32, 0.2) 3%,
+        transparent 100%);
+    background-repeat: no-repeat;
+    animation: scan 7.5s linear 0s infinite;
+  }
+
+  @keyframes scan {
+    0%        { background-position: 0 -100vh; }
+    35%, 100% { background-position: 0 100vh; }
+  }
+
+  .terminal {
+    box-sizing: inherit;
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+    max-width: 100%;
+    padding: 4rem;
+    text-transform: uppercase;
+  }
+
+  .output {
+    color: rgba(128, 255, 128, 0.8);
+    text-shadow:
+        0 0 1px rgba(51, 255, 51, 0.4),
+        0 0 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .output::before {
+    content: "> ";
+  }
+
+  /*
+  .input {
+    color: rgba(192, 255, 192, 0.8);
+    text-shadow:
+        0 0 1px rgba(51, 255, 51, 0.4),
+        0 0 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .input::before {
+    content: "$ ";
+  }
+  */
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a::before {
+    content: "[";
+  }
+
+  a::after {
+    content: "]";
+  }
+
+  .errorcode {
+    color: white;
+  }</style>
+  </head>
+  <body>
+    <nav>
+  <div class="container">
+
+  </div>
+</nav>
+<header>
+  <div class="container" style="height:100px">
+
+    <h1>Who are we?</h1>
+  </div>
+</header><br><br><br>
+<div id="nav-bg"></div>
+<section id="about">
+  <div class="container">
+
+    <div class="memberbox">
+      <h2>ФMLΞΓΓΞIИMΞ</h2>
+      <img class="avatar" src="o.png"></img><br><br>
+      <span class=quotation>This guy, well....</span>
+    </div>
+
+    <div class="memberbox">
+      <h2>Gladiator16</h2>
+      <img class="avatar" src="g.png"></img><br><br>
+      <span class=quotation>Ahh another fellow..</span>
+    </div>
+
+    <div class="memberbox">#A6ACAF
+      <h2>rXsXhXl</h2>
+      <img class="avatar" src="r.png"></img><br><br>
+      <span class=quotation>Well he is like the leader</span>
+    </div>
+</div>
+<br><br><br><br><br>
+<p style="position:relative;left:40px;font-size:23px;top:10px;  color:#A6ACAF;
+"><b>okay, so basically these 3 people on top^^^ made a country called Angapotram so like every official country<br> they are supposed to have a website, Know u will b thinking "oh ok 3 people made a webite about the country" <br>well thats where you go wrong, you see the guy in the middel made the website and if does snything then it is<br> obviously screwed, so having rating and more info or activites in any goverment website we have founder<br>,consitution and chat cause i made it. now we all have roles obviously which also are messed like chief-mla or <br>money guy dude  and a lot maore dumb stuff, so yeaah. we can also chat and chill over here.BTW u maybe wondering what our ruling system, wel it is .... </b> </p>
+<h1 style="color:#2E4053 ">dictatorcy-monarch???<br></h1>
+
+</section>
+
+
+<div class="noise"></div>
+<div class="overlay"></div>
+<div class="terminal">
+  <h1>Error <span class="errorcode">404</span></h1>
+  <p class="output">The page you are looking has to be destroyes by u (DDOS or destroy source code)</p>
+  <p class="output">Wanna go  to  <a href="index.html">return to the homepage</a>.</p>
+  <p class="output">Good luck.</p>
+</div>
+<script>$(document).ready(function() {
+  var divs = $('header');
+  var range = 200;
+  $(window).on('scroll', function() {
+    var st = $(this).scrollTop();
+    divs.each(function() {
+      var offset = $(this).offset().top;
+      var height = $(this).outerHeight();
+      offset = offset + height / 2;
+      $(this).css({
+        'opacity': (1 - ((st - offset + range) / range))
+      });
+    });
+  });
+});</script>
+  </body>
+</html>
